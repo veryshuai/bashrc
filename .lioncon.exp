@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+spawn ssh dcj138@lionxf.rcc.psu.edu
+expect "password:"
+send "\n";
+interact
+#interact -o -nobuffer -re $prompt return
+#send "new command\r"
+#interact
+

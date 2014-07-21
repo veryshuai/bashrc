@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+puts -nonewline "Which hammer?:"
+flush stdout
+gets stdin ham_num
+spawn sftp dcj138@hammer$ham_num.rcc.psu.edu
+expect "password:"
+send "\n";
+interact
